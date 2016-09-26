@@ -85,7 +85,6 @@ public class Examen extends JFrame {
 
 		nuevoBotonOperacion("=");
 		nuevoBotonOperacion("CE");
-                nuevoBotonOperacion("Convertidor");
                 
                 
 
@@ -181,7 +180,7 @@ public class Examen extends JFrame {
 	 */
 	private void calcularResultado() {
 		if (operacion.equals("Convertidor")) {
-			resultado = new Double(pantalla.getText()) * 20;
+			resultado = new Double(pantalla.getText())/20;
 		}      
 		pantalla.setText("" + resultado);
 		operacion = "";
